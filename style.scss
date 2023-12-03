@@ -1,0 +1,67 @@
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$darkblue: hsl(234, 12%, 34%);
+$grisbleu: hsl(229, 6%, 66%);
+$grisclair: hsl(0, 0%, 98%);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+
+    .titre {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        .titre__light {
+            font-weight: 200;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .titre__big {
+            font-weight: 600;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            font-weight: 400;
+            text-align: center;
+            color: $grisbleu
+        }
+
+        .card {
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    .card{
+        display:grid;
+        .supervisor{
+            display:flex;
+            flex-direction: column;
+            .loupe{
+                align-self: flex-end;
+            }
+            
+        }
+        .builder{
+            display:flex;
+            flex-direction: column;
+            .maison{
+                align-self: flex-end;
+            }
+    }
+}
+
+// media query pour grand écran
+@media only screen and (min-width:375px) {}
