@@ -1,47 +1,143 @@
-/*
-Error: Invalid CSS after "...width:375px) {}": expected "}", was ""
-        on line 67 of style.scss
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+}
+body p {
+  font-weight: 400;
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+  margin: 0px;
+}
+body h1 {
+  margin: 0px;
+}
 
-62:             }
-63:     }
-64: }
-65: 
-66: // media query pour grand écran
-67: @media only screen and (min-width:375px) {}
+.titre {
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.titre .titre__light {
+  font-weight: 200;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.titre .titre__big {
+  font-weight: 600;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 
-Backtrace:
-style.scss:67
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:468:in `update_stylesheet'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:449:in `on_file_changed'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/config.rb:28:in `call'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:117:in `block in _process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:116:in `_process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:25:in `block in loop_for'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop_for'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:85:in `_process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:51:in `block in start'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:18:in `block in new'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...width:375px) {}\": expected \"}\", was \"\"\A         on line 67 of style.scss\A \A 62:             }\A 63:     }\A 64: }\A 65: \A 66: // media query pour grand écran\A 67: @media only screen and (min-width:375px) {}"; }
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card p h1 {
+  padding: 8px;
+  text-align: left;
+  margin: 0px;
+}
+.card p {
+  font-size: 0.7em;
+}
+.card h1 {
+  font-size: 1em;
+}
+.card .supervisor {
+  box-shadow: -5px 8px 28px -18px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: solid 5px hsl(180, 62%, 55%);
+}
+.card .supervisor .loupe {
+  align-self: flex-end;
+}
+.card .builder {
+  box-shadow: -5px 8px 28px -18px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: solid 5px hsl(0, 78%, 62%);
+}
+.card .builder .maison {
+  align-self: flex-end;
+}
+.card .karma {
+  box-shadow: -5px 8px 28px -18px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: solid 5px hsl(34, 97%, 64%);
+}
+.card .karma .ampoule {
+  align-self: flex-end;
+}
+.card .calculator {
+  box-shadow: -5px 8px 28px -18px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: solid 5px hsl(212, 86%, 64%);
+}
+.card .calculator .ecran {
+  align-self: flex-end;
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 40px;
+  }
+  .card .builder {
+    grid-area: 2/3/4/4;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .card .karma {
+    grid-area: 4/3/6/4;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .card .calculator {
+    grid-area: 3/4/5/5;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .card .supervisor {
+    grid-area: 3/2/5/3;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
