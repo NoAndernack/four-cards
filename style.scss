@@ -146,36 +146,38 @@ body {
         padding: 10px;
 
     }
+
     .card {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        gap: 40px;
-        
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 10px;
 
-    .builder {
-        grid-area: 2 / 3 / 4 / 4;
-        @include maBox;
-       
+
+        .builder {
+            grid-area: 2 / 3 / 4 / 4;
+            @include maBox;
+
+        }
+
+        .karma {
+            grid-area: 4 / 3 / 6 / 4;
+            @include maBox;
+
+        }
+
+        .calculator {
+            grid-area: 3 / 4 / 5 / 5;
+            @include maBox;
+
+        }
+
+        .supervisor {
+            grid-area: 3 / 2 / 5 / 3;
+            @include maBox;
+
+        }
+
     }
-
-    .karma {
-        grid-area: 4 / 3 / 6 / 4;
-        @include maBox;
-        
-    }
-
-    .calculator {
-        grid-area: 3 / 4 / 5 / 5;
-        @include maBox;
-        
-    }
-
-    .supervisor {
-        grid-area: 3 / 2 / 5 / 3;
-        @include maBox;
-       
-    }
-
-}
 }

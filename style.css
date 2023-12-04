@@ -113,8 +113,9 @@ body h1 {
   .card {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 40px;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
   }
   .card .builder {
     grid-area: 2/3/4/4;
